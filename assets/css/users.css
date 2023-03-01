@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.users{
+    padding: 25px 30px;
+}
+
+.users header,
+.users-list a{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    text-decoration: none;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+:is(.users, .users-list) .content{
+    display: flex;
+}
+
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+
+:is(.users, .users-list) .details{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+.users .search{
+    margin: 20px 0;
+    height: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control{
+    height: 40px;
+}
+.users .search .form-control{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.users-list{
+    max-height: 350px;
+    overflow-y: auto;
+}
+.users-list::-webkit-scrollbar{
+    width: 0;
+}
+.users .search button{
+    border-radius: 0 5px 5px 0;
+    position: relative;
+
+}
+.users-list a{
+    justify-content: space-between;
+}
+.users-list a .content img{
+    height: 50px;
+    width: 50px;
+}
+.users-list a .content p{
+    color: #67676a;
+
+}
+
+.status-dot{
+    height: 15px;
+    width: 15px;
+    background: rgb(0, 255, 13);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.status-dot.offline{
+    background: #ccc;
+}
+
